@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+    <div class="jumbotron row text-center ">
+        this is the test page
+    </div>
+    <div class="ui form">
+        <div class="field">
+            <label>User Input</label>
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <input type="text" placeholder="incoming IGST" name="i_igst">
+                    <input type="text" placeholder="incoming CGST" name="i_cgst">
+                    <input type="text" placeholder="incoming SGST" name="i_sgst">
+                    <input type="text" placeholder="Current IGST" name="c_igst">
+                    <input type="text" placeholder="Current CGST" name="c_cgst">
+                    <input type="text" placeholder="Current SGST" name="c_sgst">
+                    <input type="text" placeholder="Payable IGST" name="p_igst">
+                    <input type="text" placeholder="Payable CGST" name="p_cgst">
+                    <input type="text" placeholder="Payable SGST" name="p_sgst">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="ui inverted green button">Calculate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<%- include('partials/footer')%>    
